@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="logo-container">
+    <h1>ZIYADA</h1>
+  </div>
+  <header class="navbar-container">
+    <div>
+      <h3>Menu</h3>
+    </div>
+    <nav class="nav-list">
+      <button type="submit">Register</button>
+      <button type="submit">Login</button>
+    </nav>
+  </header>
+
+  
+  <div class="registration-form">
+    <div class="registration-form-left">
+
+      <form id="register-form">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" placeholder="Masukkan ID Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+        </div>
+        <div class="form-group">
+          <label>Jenis Kelamin:</label>
+          <div class="radio-group">
+            <input type="radio" name="gender" value="male" id="male" required>
+            <label for="male">Laki-laki</label>
+            <input type="radio" name="gender" value="female" id="female" required>
+            <label for="female">Perempuan</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="religion">Agama:</label>
+          <select id="religion" name="religion" required>
+            <option value="" disabled selected>Pilih Agama Anda</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" placeholder="Isi Alamat Anda"></textarea>
+        </div>
+        <div class="buttons">
+            <button type="submit" id="Daftar">Daftar</button>
+            <button type="submit" id="Batal">Batal</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="registration-form-right form-group">
+      <label>Hobi:</label>
+      <div class="hobby-group">
+        <label><input type="checkbox" name="hobby" value="soccer"> Sepak bola</label>
+        <label><input type="checkbox" name="hobby" value="basketball"> Basket</label>
+        <label><input type="checkbox" name="hobby" value="singing"> Menyanyi</label>
+        <label><input type="checkbox" name="hobby" value="fishing"> Mancing</label>
+        <label><input type="checkbox" name="hobby" value="automotive"> Otomotif</label>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© nadiaputrirahmaniar</p>
+    </div>
+  </footer>
+</body>
+</html>

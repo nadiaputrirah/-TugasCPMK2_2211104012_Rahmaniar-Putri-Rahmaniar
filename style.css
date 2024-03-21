@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Quicksand', sans-serif; 
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f8ff;
+}
+ 
+header.navbar-container {
+  background-color: #2f94ff;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+ 
+header.navbar-container .logo img {
+  width: 150px;
+}
+ 
+.nav-list form {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list input[type="email"],
+.nav-list input[type="password"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-list button {
+  padding: 8px 15px;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-list button:hover {
+  background-color: #00408c;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 10px;
+  }
+
+  .nav-list input[type="email"],
+  .nav-list input[type="password"],
+  .nav-list button {
+    font-size: 14px;
+  }
+}
+
+ 
+main {
+  flex: 1;
+ 
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+ 
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+ 
+  display: flex;
+  align-items: center;
+}
+ 
+main .content .content-description {
+  flex: 1 1;
+}
+ 
+main .content .content-description .title {
+  margin-block: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #3a5f86;
+}
+ 
+main .content .content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #4c8fd6;
+}
+ 
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+ 
+  background-color: #2d3e50;
+ 
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+ 
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+ 
+main .content .content-description button:hover {
+  border: 3px solid #2d3e50;
+  background-color: transparent;
+ 
+  color: #2d3e50;
+}
+ 
+.content-card {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 550px;
+  margin: 20px;
+  background-color: #fff;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(133, 133, 133, 0.1);
+}
+
+.card-header {
+  background-color: #fff;
+  color: #3a5f86;
+  padding: 10px;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: center;
+  color: #3a5f86;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: #2e2c2c;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-card {
+    margin: 10px;
+  }
+}
+ 
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+ 
+  main .content .content-description .title {
+    font-size: 2rem;
+  }
+ 
+  main .content .content-description p {
+    text-align: center;
+    font-size: 1rem;
+  }
+ 
+  main .content .content-image {
+    order: -1;
+  }
+}
